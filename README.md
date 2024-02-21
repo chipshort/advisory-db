@@ -5,7 +5,7 @@
 [![Project Chat][chat-image]][chat-link]
 
 The RustSec Advisory Database is a repository of security advisories filed
-against Rust crates published via https://crates.io. A human-readable version
+against Rust crates publdished via https://crates.io. A human-readable version
 of the advisory database can be found at https://rustsec.org/advisories/.
 
 We also [export](https://github.com/rustsec/advisory-db/tree/osv) data to the [OSV](https://github.com/ossf/osv-schema) format.
@@ -17,12 +17,12 @@ and through their [API](https://osv.dev/#use-the-api).
 The following tools consume this advisory database and can be used for auditing
 and reporting (send PRs to add yours):
 
-* [cargo-audit]: Audit `Cargo.lock` files for crates with security vulnerabilities
-* [cargo-deny]: Audit `Cargo.lock` files for crates with security vulnerabilities,
+- [cargo-audit]: Audit `Cargo.lock` files for crates with security vulnerabilities
+- [cargo-deny]: Audit `Cargo.lock` files for crates with security vulnerabilities,
   limit the usage of particular dependencies, their licenses, sources to download
   from, detect multiple versions of same packages in the dependency tree and more.
-* [trivy]: A simple and comprehensive vulnerability/misconfiguration/secret scanner for containers and other artifacts. Trivy detects vulnerabilities of OS packages and language-specific packages. Works via [OSV](https://osv.dev).
-* [dependabot]: Dependabot can fix vulnerable dependencies for you by raising pull requests with security updates. Works via [GHSA](https://github.com/advisories).
+- [trivy]: A simple and comprehensive vulnerability/misconfiguration/secret scanner for containers and other artifacts. Trivy detects vulnerabilities of OS packages and language-specific packages. Works via [OSV](https://osv.dev).
+- [dependabot]: Dependabot can fix vulnerable dependencies for you by raising pull requests with security updates. Works via [GHSA](https://github.com/advisories).
 
 ## Reporting Vulnerabilities
 
@@ -119,7 +119,7 @@ keywords = ["ssl", "mitm"]
 
 # Table of canonical paths to vulnerable functions (optional)
 # mapping to which versions impacted by this advisory used that particular
-# name (e.g. if the function was renamed between versions). 
+# name (e.g. if the function was renamed between versions).
 # The path syntax is `cratename::path::to::function`, without any
 # parameters or additional information, followed by a list of version reqs.
 functions = { "mycrate::MyType::vulnerable_function" = ["< 1.2.0, >= 1.1.0"] }
@@ -149,16 +149,13 @@ They contain a `license` field explicitly indicating their license and a `url` f
 
 [![Creative Commons Attribution](https://licensebuttons.net/l/by/4.0/88x31.png)](https://github.com/RustSec/advisory-db/blob/main/LICENSES/CC-BY-4.0.txt)
 
-[//]: # (badges)
-
+[//]: # "badges"
 [build-image]: https://github.com/rustsec/advisory-db/workflows/Validate/badge.svg
 [build-link]: https://github.com/rustsec/advisory-db/actions
 [maintained-image]: https://img.shields.io/maintenance/yes/2024.svg
 [chat-image]: https://img.shields.io/badge/zulip-join_chat-blue.svg
 [chat-link]: https://rust-lang.zulipchat.com/#narrow/stream/146229-wg-secure-code/
-
-[//]: # (general links)
-
+[//]: # "general links"
 [EXAMPLE_ADVISORY.md]: https://github.com/RustSec/advisory-db/blob/main/EXAMPLE_ADVISORY.md
 [Markdown]: https://www.markdownguide.org/
 [TOML]: https://github.com/toml-lang/toml
