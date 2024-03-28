@@ -147,6 +147,9 @@ The exceptions are advisories imported from [GitHub Advisory Database](https://d
 placed under CC-BY 4.0 license.
 They contain a `license` field explicitly indicating their license and a `url` field pointing to the original advisory for proper attribution.
 
+test
+
+
 [![Creative Commons Attribution](https://licensebuttons.net/l/by/4.0/88x31.png)](https://github.com/RustSec/advisory-db/blob/main/LICENSES/CC-BY-4.0.txt)
 
 [//]: # "badges"
